@@ -1,0 +1,62 @@
+.card {
+	display: inherit;
+
+	&__item {
+		text-align: center;
+		padding: 6rem;
+		background-color: $pricing-card-color;
+		border-radius: 1.5rem;
+		@include display-flex(column, wrap, space-evenly, center);
+		h3 {
+			font-size: 3.2rem;
+			font-weight: 300;
+			color: $text-primary-color;
+		}
+
+		h5 {
+			font-size: 1.1rem;
+			font-weight: 700;
+			padding: 1rem 1.5rem;
+			border: 1px solid $text-third-color;
+			border-radius: 2rem;
+		}
+
+		h4 {
+			font-size: 2rem;
+			font-weight: 400;
+			color: $text-third-color;
+			max-width: 20rem;
+		}
+
+		button {
+			padding: 1.5rem 7rem;
+			margin-top: 6rem;
+		}
+
+		&:first-child {
+			background-color: #ffffff;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+		}
+		&:last-child {
+			button {
+				background-color: $pricing-card-color;
+				color: $button-pricing-color;
+			}
+            
+		}
+	}
+
+	&__list {
+		text-align: center;
+		padding: 0;
+		li {
+			font-size: 1.6rem;
+			color: $text-primary-color;
+			font-weight: 400;
+			margin-bottom: 3rem;
+			i {
+				color: $star-color;
+			}
+		}
+	}
+}

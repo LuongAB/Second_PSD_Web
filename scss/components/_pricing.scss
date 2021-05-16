@@ -1,0 +1,30 @@
+.pricing {
+	padding-top: 16rem;
+	padding-bottom: 19rem;
+	background-color: $background-color;
+	.container {
+		@include display-flex(row, wrap, space-between, center);
+	}
+	h2 {
+		font-family: "VarelaRound", sans-serif;
+		font-weight: 400;
+		font-size: 4rem;
+	}
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	&__text {
+		max-width: 37rem;
+		&--description {
+			font-size: 1.8rem;
+			font-weight: 400;
+			color: $text-third-color;
+		}
+		&--linkto {
+			font-size: 1.4rem;
+			color: $text-third-color;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.feature {
+	@include display-flex(row, wrap, space-around, center);
+
+	&__first {
+		@include display-flex(row, wrap, space-around, center);
+	}
+
+	&__item {
+		flex: 1;
+		@include display-flex(column, wrap, space-around, flex-start);
+		&--heading {
+			font-size: 2.6rem;
+			font-weight: 300;
+		}
+		&--description {
+			font-size: 1.6rem;
+			line-height: 1.5;
+			font-weight: 400;
+		}
+		&:first-child {
+			margin-right: 1.1rem;
+		}
+	}
+
+	&__ads {
+		display: inherit;
+		padding-top: 25rem;
+
+		&:nth-child(3) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__image {
+		flex: 1;
+	}
+
+	&__detail {
+		padding-right: 21.5rem;
+		margin-left: 10rem;
+		&--heading {
+			font-family: "VarelaRound", sans-serif;
+			font-size: 4rem;
+			font-weight: 400;
+		}
+		&--description {
+			font-size: 1.8rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: $text-third-color;
+		}
+	}
+
+	&__partner {
+		h4 {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+	}
+}

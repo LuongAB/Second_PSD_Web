@@ -1,0 +1,59 @@
+.interface {
+	padding-top: 14rem;
+	padding-bottom: 13rem;
+	background-color: $background-screen-color;
+
+	&__text {
+		@include display-flex(column, wrap, space-between, center);
+		text-align: center;
+	}
+
+	&__heading {
+		font-family: "VarelaRound", sans-serif;
+		font-weight: 400;
+		font-size: 4rem;
+	}
+
+	&__subheading {
+		font-size: 1.6rem;
+		color: $banner-text-color;
+	}
+}
+
+.line {
+	width: 5rem;
+	background-color: blue;
+	height: 0.2rem;
+}
+
+.invite {
+	padding-top: 20rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h3 {
+		font-family: "VarelaRound", sans-serif;
+		font-size: 4rem;
+		color: $text-invite-color;
+	}
+}
+
+.logo {
+	&--color {
+		&-light {
+			color: $text-third-color;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.download {
+	padding-top: 6.5rem;
+	p {
+		font-size: 1.2rem;
+		color: $text-third-color;
+	}
+}

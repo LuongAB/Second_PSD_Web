@@ -1,0 +1,30 @@
+.carousel {
+	@include display-flex(row, no-wrap, space-between, center);
+	overflow: hidden;
+	img {
+		width: 23rem;
+		object-fit: contain;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	}
+	&__item {
+		max-width: 50rem;
+		word-wrap: break-word;
+		@include display-flex(column, wrap, center, center);
+		h3 {
+			font-weight: 300;
+			font-size: 3rem;
+		}
+		h4 {
+			font-size: 1.4rem;
+			font-weight: 700;
+		}
+		blockquote {
+			font-weight: 400;
+			font-size: 2rem;
+		}
+		i {
+			color: $star-color;
+		}
+	}
+}

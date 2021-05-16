@@ -1,0 +1,27 @@
+.search {
+	position: relative;
+	width: 50rem;
+
+	input {
+		width: 100%;
+		padding: 2rem 0.5rem 2rem 2.5rem;
+		font-size: 1.6rem;
+		font-weight: 400;
+		border: 1px solid $banner-text-color;
+		border-radius: 3rem;
+		outline: none;
+		color: $text-search-color;
+	}
+
+	button {
+		position: absolute;
+		right: 0.6rem;
+		bottom: 0.6rem;
+		z-index: 2;
+		background-color: $button-invite-color;
+	}
+	
+	button i {
+		margin-left: 1.2rem;
+	}
+}

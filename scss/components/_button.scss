@@ -1,0 +1,51 @@
+.btn {
+	padding: 1.5rem 2.5rem 1.5rem 2rem;
+	cursor: pointer;
+	border: none;
+	display: inherit;
+	align-items: center;
+	font-size: 1.6rem;
+
+	&__play {
+		color: $text-primary-color;
+		background-color: transparent;
+		font-size: 1.6rem;
+		margin-bottom: 20rem;
+		border: 1px solid $button-banner-border-color;
+		i {
+			margin-right: 1.2rem;
+		}
+	}
+
+	&--color {
+		&-blue {
+			background-color: $button-getApp-bg;
+			color: #ffffff !important;
+		}
+		&-white {
+			background-color: #ffffff;
+			color: $text-primary-color;
+			border: 1px solid $button-action-border-color;
+		}
+	}
+
+	&--border {
+		&-rounded {
+			border-radius: 2.5rem;
+			&--blue {
+				border: 1px solid $button-pricing-color;
+				border-radius: 2.5rem;
+			}
+		}
+	}
+
+	&__action {
+		@include display-flex(row, wrap, space-evenly, center);
+		font-size: 1.6rem;
+		font-weight: 400;
+		color: $text-primary-color;
+		button i {
+			margin-left: 1.2rem;
+		}
+	}
+}

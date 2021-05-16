@@ -1,0 +1,79 @@
+.footer {
+	padding-top: 10rem;
+	padding-bottom: 3.5rem;
+}
+
+.subscribe {
+	text-align: center;
+	@include display-flex(column, wrap, center, center);
+	h2 {
+		font-family: "VarelaRound", sans-serif;
+		font-size: 4rem;
+		color: $text-primary-color;
+		font-weight: 400;
+	}
+
+	p {
+		font-size: 1.4rem;
+		color: $banner-text-color;
+	}
+}
+
+.column {
+	padding-top: 17.5rem;
+	@include display-flex(row, wrap, space-between, center);
+
+	&--post {
+		&-left {
+			text-align: start;
+			max-width: 30rem;
+			p {
+				font-size: 1.4rem;
+				color: $banner-text-color;
+			}
+		}
+
+		&-right {
+			width: 60%;
+			@include display-flex(row, wrap, space-between, center);
+			ul {
+				font-size: 1.6rem;
+				color: $text-third-color;
+				display: inherit;
+				flex-direction: column;
+				line-height: 3rem;
+				li:first-child {
+					font-size: 1.2rem;
+					font-weight: 700;
+					a {
+						color: $text-primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.social__contact {
+	@include display-flex(row, wrap, space-between, center);
+	font-size: 2rem;
+	i {
+		color: $banner-text-color;
+	}
+}
+
+.infomation {
+	padding-top: 3.5rem;
+	@include display-flex(row, wrap, space-between, center);
+	p {
+		color: $banner-text-color;
+		font-size: 1.4rem;
+	}
+	h6 {
+		display: inherit;
+		align-items: center;
+		color: $text-primary-color;
+		font-size: 0.9rem;
+		font-weight: 700;
+	}
+}

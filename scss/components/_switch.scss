@@ -1,0 +1,52 @@
+.switch {
+	background-color: transparent;
+	width: 20rem;
+	display: inline-block;
+	border-radius: 1rem;
+	height: 5rem;
+	padding: 0.5rem;
+	position: relative;
+	border: 1px solid $button-banner-border-color;
+	border-radius: 2.5rem;
+	@include clearfix;
+	label {
+		font-size: 1.6rem;
+		font-weight: 400;
+		float: left;
+		left: 1rem;
+		width: 50%;
+		position: relative;
+		z-index: 2;
+		line-height: 4rem;
+		cursor: pointer;
+		color: $text-third-color;
+		border-radius: 2.5rem;
+	}
+	input[type="radio"] {
+		display: none;
+		&:checked + label {
+			color: $text-primary-color;
+			font-weight: 700;
+		}
+	}
+	span {
+		position: relative;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		display: block;
+		border-radius: 2.5rem;
+		background-color: #ffffff;
+		transition: all 0.2s ease;
+
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+			rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+		&.right {
+			left: 50%;
+			border-radius: 2.5rem;
+			transition: all 0.2s ease;
+		}
+	}
+}
